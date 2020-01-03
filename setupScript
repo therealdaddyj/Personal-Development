@@ -1,0 +1,78 @@
+#!/bin/bash
+#Shell script to initialize any Mac - January 2020
+echo "Script has started"
+
+#install homebrew
+echo "Installing home-brew"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+#install curl
+brew install curl
+
+#install npm
+brew install node
+
+#install chrome
+echo "install google chrome? (y/n)"
+Read RESPONSE
+if ["RESPONSE" == "y"]; then
+brew cask install google-chrome
+
+#install php storm
+echo "install php storm? (y/n)"
+Read RESPONSE
+if ["RESPONSE" == "y"]; 
+then
+	brew cask install phpstorm
+fi
+
+#install VSCode
+echo "install VS code? (y/n)"
+Read RESPONSE
+if ["RESPONSE" == "y"]; 
+then
+	brew cask install visual-studio-code
+fi
+
+#install source tree
+echo "install source tree? (y/n)"
+Read RESPONSE
+if ["RESPONSE" == "y"]; 
+then
+	brew cask install sourcetree
+fi
+
+#install git 
+echo "install git? (y/n)"
+Read RESPONSE
+if ["RESPONSE" == "y"]; 
+then
+	brew install git
+fi
+
+#install virtualbox
+echo "install virtualbox? (y/n)"
+Read RESPONSE
+if ["RESPONSE" == "y"]; 
+then
+	brew cask install virtualbox
+fi
+
+#install Oh-my-zsh
+echo "install Oh-my-Zsh? (y/n)"
+Read RESPONSE
+if ["RESPONSE" == "y"]; 
+then
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+fi
+
+#install sublime 
+echo "install sublime text editor? (y/n)"
+Read RESPONSE
+if ["RESPONSE" == "y"]; 
+then
+	brew cask install sublime-text
+fi
+
+
