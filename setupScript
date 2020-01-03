@@ -13,66 +13,41 @@ brew install curl
 brew install node
 
 #install chrome
-echo "install google chrome? (y/n)"
-Read RESPONSE
-if ["RESPONSE" == "y"]; then
+echo "installing google chrome"
 brew cask install google-chrome
 
 #install php storm
-echo "install php storm? (y/n)"
-Read RESPONSE
-if ["RESPONSE" == "y"]; 
-then
-	brew cask install phpstorm
-fi
+echo "installing php storm"
+brew cask install phpstorm
 
 #install VSCode
-echo "install VS code? (y/n)"
-Read RESPONSE
-if ["RESPONSE" == "y"]; 
-then
-	brew cask install visual-studio-code
-fi
+echo "installing VS code"
+brew cask install visual-studio-code
 
 #install source tree
-echo "install source tree? (y/n)"
-Read RESPONSE
-if ["RESPONSE" == "y"]; 
-then
-	brew cask install sourcetree
-fi
+echo "installing source tree"
+brew cask install sourcetree
 
 #install git 
-echo "install git? (y/n)"
-Read RESPONSE
-if ["RESPONSE" == "y"]; 
-then
-	brew install git
-fi
+echo "installing git "
+brew install git
 
 #install virtualbox
-echo "install virtualbox? (y/n)"
-Read RESPONSE
-if ["RESPONSE" == "y"]; 
-then
-	brew cask install virtualbox
-fi
+echo "installing virtualbox"
+brew cask install virtualbox
+
 
 #install Oh-my-zsh
-echo "install Oh-my-Zsh? (y/n)"
-Read RESPONSE
-if ["RESPONSE" == "y"]; 
-then
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo "installing Oh-my-Zsh"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-fi
 
 #install sublime 
-echo "install sublime text editor? (y/n)"
-Read RESPONSE
-if ["RESPONSE" == "y"]; 
-then
-	brew cask install sublime-text
-fi
+echo "installing sublime text editor"
+brew cask install sublime-text
 
+#install mumble
+brew cask install mumble
+
+exit 0
 
