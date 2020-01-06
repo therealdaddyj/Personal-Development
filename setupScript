@@ -47,7 +47,12 @@ echo "installing sublime text editor"
 brew cask install sublime-text
 
 #install mumble
+echo "installing mumble"
 brew cask install mumble
+
+#install brackets
+echo "installing brackets"
+brew cask install brackets
 
 exit 0
 
